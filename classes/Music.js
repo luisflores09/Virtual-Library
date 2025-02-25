@@ -13,7 +13,7 @@ class Music extends Media {
     static shortestAlbum(music){
         let shortestAlbum = music[0]
         music.forEach(song => {
-            if (shortestAlbum.duration > song.duration) {
+            if (shortestAlbum.length > song.length) {
                 shortestAlbum = song;
                 console.log(song)
                 console.log(shortestAlbum)
